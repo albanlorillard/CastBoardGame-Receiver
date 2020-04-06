@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Hello World Chromecast App</title>
+    <style type="text/css">
+        *
+        {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello World!</div>
+
+    <script src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
+            window.castReceiverManager.start();
+        }
+    </script>
+</body>
+</html>
