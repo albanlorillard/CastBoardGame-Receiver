@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FrontChromecast</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+
+  <!-- Chrome cast receiver -->
+  <script src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+      window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
+      window.castReceiverManager.start();
+    }
+  </script>
+</body>
+</html>
